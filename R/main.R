@@ -1,7 +1,7 @@
-#' A main function
+#' A getwd function
 #' @export
 #' @examples
-#' main()
+#' getwd()
 getwd  <- function(){
   getwd()
 
