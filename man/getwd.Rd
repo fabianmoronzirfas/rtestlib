@@ -2,13 +2,13 @@
 % Please edit documentation in R/main.R
 \name{getwd}
 \alias{getwd}
-\title{A main function}
+\title{A getwd function}
 \usage{
 getwd()
 }
 \description{
-A main function
+A getwd function
 }
 \examples{
-main()
+getwd()
 }

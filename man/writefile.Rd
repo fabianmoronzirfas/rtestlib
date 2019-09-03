@@ -2,12 +2,12 @@
 % Please edit documentation in R/main.R
 \name{writefile}
 \alias{writefile}
-\title{A whoami function}
+\title{A write file function}
 \usage{
 writefile(path = "~/rtestlib.txt")
 }
 \description{
-A whoami function
+A write file function
 }
 \examples{
 writefile()
