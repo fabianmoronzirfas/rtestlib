@@ -33,3 +33,23 @@ readfile <- function(path = "~/rtestlib.txt"){
 token <- readChar(path, file.info(path)$size)
 print(token)
 }
+
+#' A curl memory test function
+#' @export
+#' @examples
+#' curlmemory()
+curlmemory <- function(url = "https://jsonplaceholder.typicode.com/users"){
+  req <- curl::curl_fetch_memory(url)
+  str(req)
+  res <- jsonlite::prettify(rawToChar(req$content))
+  return(res)
+}
+#' A httr request test function
+#' @export
+#' @examples
+#' httrreq()
+
+httrreq <- function(url = "https://jsonplaceholder.typicode.com/users"){
+resp <- httr::GET(url)
+return (resp)
+}
